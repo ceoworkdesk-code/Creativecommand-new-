@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { POSTS } from "@/data/posts";
-import Stamp from "@/components/Stamp";
+import { POSTS } from "../../../data/posts";
+import Stamp from "../../../components/Stamp";
 
 export function generateStaticParams() {
   return POSTS.map((p) => ({ slug: p.slug }));
