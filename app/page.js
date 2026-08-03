@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Radio, ArrowUpRight, ChevronRight, Video, PenTool, Mic, Zap } from "lucide-react";
-import PostCard from "@/components/PostCard";
-import Newsletter from "@/components/Newsletter";
-import { POSTS, TAGS } from "@/data/posts";
+import PostCard from "../components/PostCard";
+import Newsletter from "../components/Newsletter";
+import { POSTS, TAGS } from "../data/posts";
 
 const ICONS = { VIDEO: Video, WRITING: PenTool, VOICE: Mic, AUTOMATION: Zap };
 
