@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import PostCard from "@/components/PostCard";
-import { POSTS, TAGS } from "@/data/posts";
-
+import PostCard from "../../components/PostCard";
+import { POSTS, TAGS } from "../../data/posts";
 export default function Blog() {
   const [filter, setFilter] = useState("ALL");
   const filtered = filter === "ALL" ? POSTS : POSTS.filter((p) => p.tag === filter);
